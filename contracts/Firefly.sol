@@ -21,7 +21,7 @@ contract Firefly {
     }
 
     function broadcastBatch(bytes32 txnId, bytes32 batchId, bytes32 payloadRef) public {
-        emit BroadcastBatch(msg.sender, now, txnId, batchId, payloadRef);
+        emit BroadcastBatch(msg.sender, block.timestamp, txnId, batchId, payloadRef);
     }
 
 }
